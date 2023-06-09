@@ -9,7 +9,7 @@ services:
       TRANSMISSION_WEB_HOME: /transmission-web-control/
       TZ: Europe/London
       USER: casaos
-    image: lscr.io/linuxserver/transmission:version-3.00-r5
+    image: lscr.io/linuxserver/transmission:4.0.3-r2-ls179
     deploy:
       resources:
         reservations:
@@ -63,16 +63,13 @@ services:
         - container: "9091"
           description:
             en_us: ""
-
         - container: "51413"
           description:
             en_us: ""
-
         - container: "51413"
           description:
             en_us: ""
           protocol: udp
-
       volumes:
         - container: /config
           description:

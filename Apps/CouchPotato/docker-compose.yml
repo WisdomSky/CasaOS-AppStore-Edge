@@ -5,7 +5,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: $TZ
-    image: linuxserver/couchpotato:version-7260c12f
+    image: linuxserver/couchpotato:7260c12f-ls82
     deploy:
       resources:
         reservations:
@@ -45,7 +45,6 @@ services:
           description:
             en_us: WebUI HTTP Port
             zh_cn: WebUI HTTP端口
-
       volumes:
         - container: /config
           description:

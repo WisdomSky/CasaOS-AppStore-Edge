@@ -5,11 +5,11 @@ services:
       PHOTOPRISM_ADMIN_PASSWORD: casaos
       PHOTOPRISM_UPLOAD_NSFW: "true"
       TZ: $TZ
-    image: photoprism/photoprism:221118-jammy
+    image: photoprism/photoprism:230607
     deploy:
       resources:
         reservations:
-          memory: "512M"
+          memory: 512M
     network_mode: bridge
     ports:
       - target: 2342
@@ -42,7 +42,6 @@ services:
           description:
             en_us: WebUI HTTP Port
             zh_cn: WebUI HTTP 端口
-
       volumes:
         - container: /photoprism/storage
           description:

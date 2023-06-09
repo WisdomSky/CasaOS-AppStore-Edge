@@ -5,7 +5,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: Europe/London
-    image: linuxserver/prowlarr:0.4.5-nightly
+    image: linuxserver/prowlarr:1.6.0-nightly
     deploy:
       resources:
         reservations:
@@ -35,7 +35,6 @@ services:
         - container: "9696"
           description:
             en_us: ""
-
       volumes:
         - container: /config
           description:

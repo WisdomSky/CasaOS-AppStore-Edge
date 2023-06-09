@@ -1,11 +1,11 @@
 name: vaultwarden
 services:
   vaultwarden:
-    image: vaultwarden/server:1.24.0
+    image: vaultwarden/server:1.28.1
     deploy:
       resources:
         reservations:
-          memory: "256M"
+          memory: 256M
     network_mode: bridge
     ports:
       - target: 80
@@ -22,7 +22,6 @@ services:
           description:
             en_us: WebUI HTTP Port
             zh_cn: WebUI HTTP 端口
-
       volumes:
         - container: /data
           description:

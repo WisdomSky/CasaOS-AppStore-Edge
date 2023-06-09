@@ -6,7 +6,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: Europe/London
-    image: linuxserver/lazylibrarian:version-a7d5948a
+    image: linuxserver/lazylibrarian:f066b525-ls111
     deploy:
       resources:
         reservations:
@@ -45,7 +45,6 @@ services:
         - container: "5299"
           description:
             en_us: ""
-
       volumes:
         - container: /downloads
           description:

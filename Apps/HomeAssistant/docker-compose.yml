@@ -5,7 +5,7 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: linuxserver/homeassistant:2023.3.1
+    image: linuxserver/homeassistant:2023.6.1
     deploy:
       resources:
         reservations:
@@ -30,7 +30,6 @@ services:
           description:
             en_us: Run HomeAssistant as specified gid.
             zh_cn: 以指定的gid运行HomeAssistant
-
       volumes:
         - container: /config
           description:

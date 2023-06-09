@@ -8,11 +8,11 @@ services:
       PGID: $PGID
       PUID: $PUID
       VERSION: docker
-    image: linuxserver/plex:1.31.1
+    image: linuxserver/plex:1.32.3.7162-b0a36929b-ls171
     deploy:
       resources:
         reservations:
-          memory: "256M"
+          memory: 256M
     network_mode: host
     restart: unless-stopped
     volumes:
@@ -36,7 +36,6 @@ services:
           description:
             en_us: Let Docker handle the Plex Version
             zh_cn: 让Docker处理Plex版本
-
       volumes:
         - container: /config
           description:

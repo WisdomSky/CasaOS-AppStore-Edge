@@ -42,7 +42,6 @@ services:
           description:
             en_us: WebUI Port
             zh_cn: WebUI端口
-
       volumes:
         - container: /db
           description:

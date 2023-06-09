@@ -13,11 +13,11 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: linuxserver/jellyfin:10.8.9
+    image: linuxserver/jellyfin:10.8.10
     deploy:
       resources:
         reservations:
-          memory: "256M"
+          memory: 256M
     network_mode: bridge
     ports:
       - target: 8096
@@ -66,22 +66,18 @@ services:
           description:
             en_us: WebUI HTTP Port
             zh_cn: WebUI HTTP端口
-
         - container: "8920"
           description:
             en_us: WebUI HTTPS Port
             zh_cn: WebUI HTTPS端口
-
         - container: "7359"
           description:
             en_us: Jellyfin auto-discovery Port
             zh_cn: Jellyfin自动发现端口
-
         - container: "1900"
           description:
             en_us: Jellyfin DLNA Port
             zh_cn: Jellyfin DLNA端口
-
       volumes:
         - container: /config
           description:

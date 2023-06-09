@@ -5,11 +5,11 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: linuxserver/syncthing:1.23.1
+    image: linuxserver/syncthing:1.23.5
     deploy:
       resources:
         reservations:
-          memory: "256M"
+          memory: 256M
     network_mode: bridge
     ports:
       - target: 8384
@@ -51,12 +51,10 @@ services:
           description:
             en_us: WebUI HTTP Port
             zh_cn: WebUI HTTP端口
-
         - container: "22000"
           description:
             en_us: Syncthing listening Port (TCP)
             zh_cn: Syncthing监听端口（TCP）
-
         - container: "22000"
           description:
             en_us: Syncthing listening Port (UDP)
@@ -67,7 +65,6 @@ services:
             en_us: Syncthing protocol discovery Port (TCP)
             zh_cn: Syncthing协议发现端口（TCP）
           protocol: udp
-
       volumes:
         - container: /config
           description:

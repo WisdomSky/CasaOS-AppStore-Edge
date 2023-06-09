@@ -4,7 +4,7 @@ services:
     environment:
       USER_GID: "1000"
       USER_UID: "1000"
-    image: gitea/gitea:1.18.5
+    image: gitea/gitea:1.20-nightly
     deploy:
       resources:
         reservations:
@@ -37,12 +37,10 @@ services:
           description:
             en_us: WebUI Port
             zh_cn: WebUI 端口
-
         - container: "22"
           description:
             en_us: SSH Port
             zh_cn: SSH 端口
-
       volumes:
         - container: /data
           description:

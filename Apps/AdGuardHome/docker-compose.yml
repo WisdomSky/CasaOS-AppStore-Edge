@@ -1,7 +1,7 @@
 name: adguard-home
 services:
   adguard-home:
-    image: adguard/adguardhome:v0.107.5
+    image: adguard/adguardhome:v0.108.0-b.36
     deploy:
       resources:
         reservations:
@@ -48,7 +48,6 @@ services:
         - container: "784"
           description:
             en_us: ""
-
       volumes:
         - container: /opt/adguardhome/work
           description:

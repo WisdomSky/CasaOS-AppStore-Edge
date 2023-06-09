@@ -1,7 +1,7 @@
 name: grafana
 services:
   grafana:
-    image: grafana/grafana:8.4.5
+    image: grafana/grafana:9.5.3
     deploy:
       resources:
         reservations:
@@ -26,7 +26,6 @@ services:
           description:
             en_us: Grafana database and plugins directory.
             zh_cn: Grafana 数据库和插件目录
-
 x-casaos:
   architectures:
     - amd64

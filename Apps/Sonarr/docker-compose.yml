@@ -5,11 +5,11 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: linuxserver/sonarr:3.0.10
+    image: linuxserver/sonarr:3.0.10.1567-ls194
     deploy:
       resources:
         reservations:
-          memory: "256M"
+          memory: 256M
     network_mode: bridge
     ports:
       - target: 8989
@@ -45,7 +45,6 @@ services:
           description:
             en_us: WebUI HTTP Port
             zh_cn: WebUI HTTP端口
-
       volumes:
         - container: /config
           description:

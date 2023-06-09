@@ -30,8 +30,8 @@ services:
             en_us: ""
         - container: TZ
           description:
-            en_us: "timezone"
-            zh_cn: "时区"
+            en_us: timezone
+            zh_cn: 时区
       ports:
         - container: "5230"
           description:
@@ -42,7 +42,6 @@ services:
           description:
             en_us: memos data directory.
             zh_cn: memos 数据目录
-
 x-casaos:
   architectures:
     - amd64

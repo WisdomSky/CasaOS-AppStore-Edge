@@ -6,7 +6,7 @@ services:
       TZ: $TZ
       VIRTUAL_HOST: pi.hole
       WEBPASSWORD: casaos
-    image: pihole/pihole:2023.02.2
+    image: pihole/pihole:2023.05.2
     deploy:
       resources:
         reservations:
@@ -58,12 +58,10 @@ services:
           description:
             en_us: WebUI HTTP Port
             zh_cn: WebUI HTTP 端口
-
         - container: "53"
           description:
             en_us: Pihole DNS port
             zh_cn: Pihole DNS 端口
-
         - container: "53"
           description:
             en_us: Pihole DNS port
@@ -79,7 +77,6 @@ services:
             en_us: Pihole DHCP IPv6 port
             zh_cn: Pihole DHCP IPv6 端口
           protocol: udp
-
       volumes:
         - container: /etc/pihole
           description:

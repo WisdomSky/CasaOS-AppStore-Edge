@@ -53,18 +53,15 @@ services:
           description:
             en_us: WebUI HTTP Port
             zh_cn: WebUI HTTP 端口
-
         - container: "6881"
           description:
             en_us: Inbound torrent traffic (TCP)
             zh_cn: 入站 torrent 流量（TCP）
-
         - container: "6881"
           description:
             en_us: Inbound torrent traffic (UDP)
             zh_cn: 入站 torrent 流量（UDP）
           protocol: udp
-
       volumes:
         - container: /config
           description:

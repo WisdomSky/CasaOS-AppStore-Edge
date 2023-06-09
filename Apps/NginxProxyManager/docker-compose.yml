@@ -1,11 +1,11 @@
 name: nginxproxymanager
 services:
   nginxproxymanager:
-    image: jc21/nginx-proxy-manager:2.9.19
+    image: jc21/nginx-proxy-manager:v3
     deploy:
       resources:
         reservations:
-          memory: "128M"
+          memory: 128M
     network_mode: bridge
     ports:
       - target: 80
@@ -31,17 +31,14 @@ services:
           description:
             en_us: Nginx HTTP Port
             zh_cn: Nginx HTTP 端口
-
         - container: "443"
           description:
             en_us: Nginx HTTPS Port
             zh_cn: Nginx HTTPS 端口
-
         - container: "81"
           description:
             en_us: WebUI Port
             zh_cn: WebUI 端口
-
       volumes:
         - container: /data
           description:

@@ -1,6 +1,4 @@
 name: mineos-node
-# Base file from: https://github.com/hexparrot/mineos-node/blob/master/docker-compose.yml
-
 services:
   mineos:
     image: hexparrot/mineos:latest
@@ -8,130 +6,94 @@ services:
     networks:
       - mineos
     restart: unless-stopped
-
-    # Adjust as needed; if this is too short, stopping the container
-    # may corrupt map data
     stop_grace_period: 10m
-
     volumes:
-      # Using a bind mapping is preferrable here due to how docker
-      # stores names volumes by default in /var/lib/docker/volumes
-      # with permissions that prevent normal users from accessing
-      # the folder structure.
       - /var/games/mineos/minecraft:/var/games/minecraft
-
     environment:
       USE_HTTPS: "true"
       SERVER_PORT: 8443
       USER_NAME: mc
       USER_UID: 1000
       USER_PASSWORD: root
-
     ports:
-      # HTTPS port for web interface. If you change the SERVER_PORT
-      # variable, also change this mapping.
-      - "8444:8443/tcp"
-
-      # Minecraft server ports. 25565 is the default, but is you plan
-      # on running multiple servers at the same time, each will need
-      # a unique port unless you are using bungiecord.
-      # Expand this range as needed.
-      - "25565-25570:25565-25570/tcp"
-      - "25565-25570:25565-25570/udp"
-
+      - 8444:8443/tcp
+      - 25565-25570:25565-25570/tcp
+      - 25565-25570:25565-25570/udp
     x-casaos:
       envs:
         - container: USE_HTTPS
           description:
             en_us: Should the web interface use HTTPS or HTTP? Valid entries are "true" and "false" (with quotes)
             es_es: ¿Debe la interfaz web usar HTTPS o HTTP? Las entradas válidas son "true" y "false" (con comillas)
-
         - container: SERVER_PORT
           description:
             en_us: What port should the web interface listen on? This is independent of the USE_HTTPS setting.
             es_es: ¿En qué puerto debe escuchar la interfaz web? Esto es independiente de la configuración USE_HTTPS.
-
         - container: USER_NAME
           description:
             en_us: On startup, mineos will check if an account of the name "mc" exists. If it does not exist, one will be created. This account, and any other created with this variable will be permitted to login to the web interface.
             es_es: Al iniciar, mineos verificará si existe una cuenta con el nombre "mc". Si no existe, se creará una. Esta cuenta y cualquier otra creada con esta variable podrán iniciar sesión en la interfaz web.
-
         - container: USER_UID
           description:
             en_us: If the "mc" account does not already exist, when mineos creates it, it will do so with UID same as the value of the variable. If an account with this UID already exists, account creation will be aborted.
             es_es: Si la cuenta "mc" aún no existe, cuando mineos la cree, lo hará con el mismo UID que el valor de la variable. Si ya existe una cuenta con este UID, se cancelará la creación de la cuenta.
-
         - container: USER_PASSWORD
           description:
             en_us: If the "mc" account is being created, it will use the default password "root" (without quotes). It is recommended to change this to something more secure.
             es_es: Si se está creando la cuenta "mc", utilizará la contraseña "root" (sin comillas) por defecto. Es recomendable cambiar esto por algo más seguro.
-
       ports:
         - container: "8443"
           description:
             en_us: WebUI HTTP Port
           protocol: tcp
-
         - container: "25565"
           description:
             en_us: Minecraft listening Port (TCP)
           protocol: tcp
-
         - container: "25566"
           description:
             en_us: Minecraft listening Port (TCP)
           protocol: tcp
-
         - container: "25567"
           description:
             en_us: Minecraft listening Port (TCP)
           protocol: tcp
-
         - container: "25568"
           description:
             en_us: Minecraft listening Port (TCP)
           protocol: tcp
-
         - container: "25569"
           description:
             en_us: Minecraft listening Port (TCP)
           protocol: tcp
-
         - container: "25570"
           description:
             en_us: Minecraft listening Port (TCP)
           protocol: tcp
-
         - container: "25565"
           description:
             en_us: Minecraft listening Port (UDP)
           protocol: udp
-
         - container: "25566"
           description:
             en_us: Minecraft listening Port (UDP)
           protocol: udp
-
         - container: "25567"
           description:
             en_us: Minecraft listening Port (UDP)
           protocol: udp
-
         - container: "25568"
           description:
             en_us: Minecraft listening Port (UDP)
           protocol: udp
-
         - container: "25569"
           description:
             en_us: Minecraft listening Port (UDP)
           protocol: udp
-
         - container: "25570"
           description:
             en_us: Minecraft listening Port (UDP)
           protocol: udp
-
       volumes:
         - container: /var/games/minecraft
           description:
@@ -259,10 +221,7 @@ x-casaos:
   index: /admin/index.html
   scheme: https
   port_map: "8444"
-
 volumes:
-  mineos_data:
-
-
+  mineos_data: null
 networks:
-  mineos:
+  mineos: null

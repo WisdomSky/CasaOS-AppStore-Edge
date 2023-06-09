@@ -11,7 +11,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: $TZ
-    image: linuxserver/emby:4.6.7
+    image: linuxserver/emby:4.8.0-beta
     deploy:
       resources:
         reservations:
@@ -50,11 +50,9 @@ services:
         - container: "8096"
           description:
             en_us: ""
-
         - container: "8920"
           description:
             en_us: ""
-
       volumes:
         - container: /config
           description:

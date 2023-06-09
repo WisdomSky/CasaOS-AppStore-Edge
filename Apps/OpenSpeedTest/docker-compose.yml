@@ -17,7 +17,6 @@ services:
         - container: "3000"
           description:
             en_us: ""
-
 x-casaos:
   architectures:
     - amd64

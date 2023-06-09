@@ -6,11 +6,11 @@ services:
       PUID: $PUID
       TZ: $TZ
       UMASK: "002"
-    image: hotio/qbittorrent:release-4.5.2
+    image: hotio/qbittorrent:release-4.5.3
     deploy:
       resources:
         reservations:
-          memory: "256M"
+          memory: 256M
     network_mode: bridge
     ports:
       - target: 8080
@@ -47,7 +47,6 @@ services:
           description:
             en_us: WebUI HTTP Port
             zh_cn: WebUI HTTP 端口
-
       volumes:
         - container: /config
           description:
@@ -134,7 +133,6 @@ x-casaos:
 
         CasaOS 其他 DATA 子目录的路径也类似。
         请确保在使用 qBittorrent 时使用正确的路径。
-
   title:
     en_us: qBittorrent
   index: /

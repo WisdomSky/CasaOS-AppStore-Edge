@@ -1,11 +1,11 @@
 name: uptimekuma
 services:
   uptimekuma:
-    image: louislam/uptime-kuma:1.20.2-alpine
+    image: louislam/uptime-kuma:1.21.3
     deploy:
       resources:
         reservations:
-          memory: "128M"
+          memory: 128M
     network_mode: bridge
     ports:
       - target: 3001
@@ -22,7 +22,6 @@ services:
           description:
             en_us: WebUI Port
             zh_cn: WebUI 端口
-
       volumes:
         - container: /app/data
           description:

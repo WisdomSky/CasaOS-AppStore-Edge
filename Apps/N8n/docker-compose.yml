@@ -3,7 +3,7 @@ services:
   n8n:
     environment:
       TZ: $TZ
-    image: n8nio/n8n:0.218.0
+    image: n8nio/n8n:1.0.0-rc
     deploy:
       resources:
         reservations:
@@ -29,7 +29,6 @@ services:
           description:
             en_us: web port
             zh_cn: web 端口
-
       volumes:
         - container: /home/node/.n8n
           description:

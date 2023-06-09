@@ -1,11 +1,11 @@
 name: nextcloud
 services:
   nextcloud:
-    image: nextcloud:25.0.4
+    image: nextcloud:26.0.2-fpm
     deploy:
       resources:
         reservations:
-          memory: "512M"
+          memory: 512M
     network_mode: bridge
     ports:
       - target: 80
@@ -25,12 +25,10 @@ services:
           description:
             en_us: WebUI HTTP Port
             zh_cn: WebUI HTTP 端口
-
         - container: "443"
           description:
             en_us: WebUI HTTPS Port
             zh_cn: WebUI HTTPS 端口
-
       volumes:
         - container: /var/www/html
           description:
