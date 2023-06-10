@@ -3,7 +3,7 @@ services:
   n8n:
     environment:
       TZ: $TZ
-    image: n8nio/n8n:1.0.0-rc
+    image: n8nio/n8n:0.230.3
     deploy:
       resources:
         reservations:

@@ -5,7 +5,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: $TZ
-    image: linuxserver/couchpotato:7260c12f-ls82
+    image: linuxserver/couchpotato:2021.11.22
     deploy:
       resources:
         reservations:
