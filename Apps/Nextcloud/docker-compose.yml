@@ -1,7 +1,7 @@
 name: nextcloud
 services:
   nextcloud:
-    image: nextcloud:apache
+    image: nextcloud:27.0.0-fpm-alpine
     deploy:
       resources:
         reservations:

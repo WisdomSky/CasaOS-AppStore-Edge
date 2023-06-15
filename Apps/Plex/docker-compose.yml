@@ -8,7 +8,7 @@ services:
       PGID: $PGID
       PUID: $PUID
       VERSION: docker
-    image: linuxserver/plex:undefined
+    image: linuxserver/plex:1.32.3.7192-7aa441827-ls173
     deploy:
       resources:
         reservations:
