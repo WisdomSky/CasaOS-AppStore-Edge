@@ -1,4 +1,4 @@
-name: MongoDB
+name: MongoDB4
 services:
   mongo:
     image: mongo:7.0.0-rc4-windowsservercore-ltsc2022
@@ -41,14 +41,14 @@ services:
             en_us: MongoDB Port
     ports:
       - target: 27017
-        published: 27017
+        published: "27017"
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/mongo/data/configdb
+        source: /DATA/AppData/mongodb4/data/configdb
         target: /data/configdb
       - type: bind
-        source: /DATA/AppData/mongo/data/db
+        source: /DATA/AppData/mongodb4/data/db
         target: /data/db
 x-casaos:
   architectures:
@@ -83,23 +83,8 @@ x-casaos:
   screenshot_link: null
   developer: MongoDB Inc.
   author: WisdomSky
-  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Mongo/icon.png
-  thumbnail: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Mongo/icon.png
+  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/MongoDB4/icon.png
+  thumbnail: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/MongoDB4/icon.png
   category: Developer
-  tips:
-    before_install:
-      en_us: This version of MongoDB requires a CPU with AVX support. This version of MongoDB will not work with ZimaBoard.
-      zh_cn: 此版本的 MongoDB 需要支持 AVX 的 CPU。此版本的 MongoDB 不适用于 ZimaBoard。
-      ar_sa: تتطلب هذه النسخة من MongoDB وحدة المعالجة المركزية التي تدعم AVX. هذه النسخة من MongoDB لن تعمل مع ZimaBoard.
-      de_de: Diese Version von MongoDB erfordert eine CPU mit AVX-Unterstützung. Diese Version von MongoDB funktioniert nicht mit ZimaBoard.
-      es_es: Esta versión de MongoDB requiere una CPU con soporte AVX. Esta versión de MongoDB no funcionará con ZimaBoard.
-      fr_fr: Cette version de MongoDB nécessite un processeur avec prise en charge AVX. Cette version de MongoDB ne fonctionnera pas avec ZimaBoard.
-      hu_hu: Az MongoDB ezen verziója AVX támogatást igényelő CPU-t igényel. Az MongoDB ezen verziója nem fog működni ZimaBoard-dal.
-      it_it: Questa versione di MongoDB richiede una CPU con supporto AVX. Questa versione di MongoDB non funzionerà con ZimaBoard.
-      ru_ru: Для работы этой версии MongoDB требуется процессор с поддержкой AVX. Эта версия MongoDB не будет работать с ZimaBoard.
-      pl_pl: Ta wersja MongoDB wymaga procesora z obsługą AVX. Ta wersja MongoDB nie będzie działać z ZimaBoard.
-      pt_br: Esta versão do MongoDB requer uma CPU com suporte AVX. Esta versão do MongoDB não funcionará com ZimaBoard.
-      sv_se: Den här versionen av MongoDB kräver en CPU med AVX-stöd. Den här versionen av MongoDB kommer inte att fungera med ZimaBoard.
-      uk_ua: Ця версія MongoDB вимагає процесора з підтримкою AVX. Ця версія MongoDB не працюватиме з ZimaBoard.
   title:
-    en_us: MongoDB
+    en_us: MongoDB 4
