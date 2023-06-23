@@ -6,7 +6,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: Europe/London
-    image: linuxserver/lazylibrarian:f066b525-ls112
+    image: linuxserver/lazylibrarian:version-a7d5948a
     deploy:
       resources:
         reservations:

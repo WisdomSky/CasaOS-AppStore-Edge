@@ -5,7 +5,7 @@ services:
       - PGID=$PGID
       - PUID=$PUID
       - TZ=$TZ
-    image: lscr.io/linuxserver/snapdrop:eac78009-ls102
+    image: lscr.io/linuxserver/snapdrop:version-eac78009
     network_mode: bridge
     ports:
       - target: 443

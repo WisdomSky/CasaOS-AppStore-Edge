@@ -6,7 +6,7 @@ services:
       PUID: $PUID
       TZ: $TZ
       UMASK: "002"
-    image: hotio/qbittorrent:release-4.5.4
+    image: hotio/qbittorrent:release-4.5.2
     deploy:
       resources:
         reservations:

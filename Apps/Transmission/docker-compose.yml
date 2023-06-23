@@ -9,7 +9,7 @@ services:
       TRANSMISSION_WEB_HOME: /transmission-web-control/
       TZ: Europe/London
       USER: casaos
-    image: lscr.io/linuxserver/transmission:4.0.3-r3-ls182
+    image: lscr.io/linuxserver/transmission:version-3.00-r5
     deploy:
       resources:
         reservations:

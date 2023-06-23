@@ -5,7 +5,7 @@ services:
       - PGID=$PGID
       - PUID=$PUID
       - TZ=$TZ
-    image: lscr.io/linuxserver/resilio-sync:2.7.3.1381-1-ls147
+    image: lscr.io/linuxserver/resilio-sync:2.7.3
     network_mode: bridge
     ports:
       - target: 55555
