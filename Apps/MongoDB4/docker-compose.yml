@@ -1,7 +1,7 @@
 name: MongoDB4
 services:
   mongo:
-    image: mongo:7.0.0-rc5-windowsservercore-ltsc2022
+    image: mongo:7.0.0-rc6-windowsservercore-ltsc2022
     restart: unless-stopped
     environment:
       PUID: $PUID
