@@ -1,7 +1,7 @@
 name: openspeedtest
 services:
   openspeedtest:
-    image: openspeedtest/latest:v2.0.0
+    image: openspeedtest/latest:v2.0.1
     deploy:
       resources:
         reservations:
