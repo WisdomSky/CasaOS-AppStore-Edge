@@ -45,7 +45,7 @@ services:
         source: /DATA/AppData/petio/logs
         target: /app/logs
   mongo:
-    image: mongo:7.0.0-rc6-windowsservercore-ltsc2022
+    image: mongo:7.0.0-rc7-windowsservercore-ltsc2022
     restart: unless-stopped
     hostname: mongo
     networks:
