@@ -17,6 +17,7 @@ services:
         - container: "3000"
           description:
             en_us: ""
+    container_name: openspeedtest
 x-casaos:
   architectures:
     - amd64

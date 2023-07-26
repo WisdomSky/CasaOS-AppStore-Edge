@@ -42,6 +42,7 @@ services:
           description:
             en_us: WebUI HTTP Port
             zh_cn: WebUI HTTP 端口
+    container_name: chatgpt-next-web
 x-casaos:
   architectures:
     - amd64

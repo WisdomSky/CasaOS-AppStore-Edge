@@ -34,6 +34,7 @@ services:
           description:
             en_us: Nextcloud config directory.
             zh_cn: Nextcloud 配置目录。
+    container_name: nextcloud
 x-casaos:
   architectures:
     - amd64

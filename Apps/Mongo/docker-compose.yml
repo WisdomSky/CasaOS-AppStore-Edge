@@ -50,6 +50,7 @@ services:
       - type: bind
         source: /DATA/AppData/mongo/data/db
         target: /data/db
+    container_name: mongo
 x-casaos:
   architectures:
     - amd64

@@ -5,7 +5,7 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: neosmemo/memos:0.14.1
+    image: neosmemo/memos:0.14.2
     deploy:
       resources:
         reservations:
@@ -42,6 +42,7 @@ services:
           description:
             en_us: memos data directory.
             zh_cn: memos 数据目录
+    container_name: memos
 x-casaos:
   architectures:
     - amd64

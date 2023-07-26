@@ -6,7 +6,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: Europe/London
-    image: lscr.io/linuxserver/jackett:0.21.534
+    image: lscr.io/linuxserver/jackett:0.21.541
     deploy:
       resources:
         reservations:
@@ -49,6 +49,7 @@ services:
         - container: /downloads
           description:
             en_us: ""
+    container_name: jackett
 x-casaos:
   architectures:
     - amd64

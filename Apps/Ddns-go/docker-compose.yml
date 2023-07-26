@@ -1,7 +1,7 @@
 name: ddns-go
 services:
   ddns-go:
-    image: jeessy/ddns-go:v5.5.0
+    image: jeessy/ddns-go:v5.5.1
     network_mode: bridge
     deploy:
       resources:
@@ -27,6 +27,7 @@ services:
           description:
             en_us: ddns-go config directory.
             zh_cn: ddns-go 配置目录
+    container_name: ddns-go
 x-casaos:
   architectures:
     - amd64

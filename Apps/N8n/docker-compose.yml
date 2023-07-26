@@ -3,7 +3,7 @@ services:
   n8n:
     environment:
       TZ: $TZ
-    image: n8nio/n8n:1.0.5
+    image: n8nio/n8n:1.1.0
     deploy:
       resources:
         reservations:
@@ -34,6 +34,7 @@ services:
           description:
             en_us: n8n directory.
             zh_cn: n8n 目录。
+    container_name: n8n
 x-casaos:
   architectures:
     - amd64
