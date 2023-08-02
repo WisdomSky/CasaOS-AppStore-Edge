@@ -1,7 +1,7 @@
 name: adguard-home
 services:
   adguard-home:
-    image: adguard/adguardhome:v0.107.35
+    image: adguard/adguardhome:v0.107.36
     deploy:
       resources:
         reservations:
