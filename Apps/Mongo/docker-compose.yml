@@ -1,4 +1,4 @@
-name: MongoDB
+name: mongodb
 services:
   mongo:
     image: mongo:7.0.0-rc8-windowsservercore-ltsc2022
