@@ -5,7 +5,7 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: ghcr.io/mckaywrigley/chatbot-ui@sha256:569dffe6043136f03de86bde38453a58d05150f29476239dc1da4ce2573b4101
+    image: ghcr.io/mckaywrigley/chatbot-ui@sha256:8c60abae8a34fd43f7015c124e0b972839e0efb35c06cd31cd1ec1ed9a57ceeb
     network_mode: bridge
     ports:
       - target: 3000
