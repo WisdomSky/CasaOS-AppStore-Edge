@@ -1,7 +1,7 @@
 name: stash
 services:
   stash:
-    image: stashapp/stash:v0.22.0
+    image: stashapp/stash:v0.22.1
     restart: unless-stopped
     environment:
       - TZ=$TZ
