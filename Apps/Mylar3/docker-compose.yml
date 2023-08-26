@@ -4,7 +4,7 @@ services:
     environment:
       PGID: "1000"
       PUID: "1000"
-    image: linuxserver/mylar3:0.7.4
+    image: linuxserver/mylar3:0.7.5
     deploy:
       resources:
         reservations:
