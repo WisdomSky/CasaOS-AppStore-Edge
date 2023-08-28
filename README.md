@@ -10,6 +10,10 @@ CasaOS AppStore needs your help to grow:
 Thank you!
 
 ---
+
+![Number of installs](https://counter.paodayag.dev/badge/edge?silent=true&label=Installs) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RYAFEWHVZCZ62) 👈 ☕ Treat me a cup of coffee...
+
+---
 ## 💡 Information
 
 This is an `Edge` version of the [Official CasaOS Appstore](https://github.com/IceWhaleTech/CasaOS-AppStore/blob/main/CONTRIBUTING.md). 
