@@ -38,7 +38,7 @@ Unregister the Official CasaOS Appstore:
 
 Register the edge version of CasaOS appstore:
 
-    casaos-cli app-management register app-store https://paodayag.dev/casaos-appstore-edge.zip
+    casaos-cli app-management register app-store https://casaos-appstore.paodayag.dev/edge.zip
 
 Done.
 
@@ -84,7 +84,7 @@ Done.
 
     _For example, if my CasaOS is running on port `90`:_
 
-        casaos-cli app-management register app-store https://paodayag.dev/casaos-appstore-edge.zip -u "localhost:90"
+        casaos-cli app-management register app-store https://casaos-appstore.paodayag.dev/edge.zip -u "localhost:90"
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
