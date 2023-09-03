@@ -6,7 +6,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: Europe/London
-    image: lscr.io/linuxserver/jackett:0.21.724
+    image: lscr.io/linuxserver/jackett:0.21.733
     deploy:
       resources:
         reservations:
