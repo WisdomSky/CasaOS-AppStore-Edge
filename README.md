@@ -11,7 +11,7 @@ Thank you!
 
 ---
 
-![Number of installs](https://visitly.paodayag.dev/edge.zip/badge) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RYAFEWHVZCZ62) 👈 ☕ Treat me a cup of coffee...
+![Number of installs](https://visitly.paodayag.dev/edge.zip/badge?label=Installs) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RYAFEWHVZCZ62) 👈 ☕ Treat me a cup of coffee...
 
 ---
 ## 💡 Information
