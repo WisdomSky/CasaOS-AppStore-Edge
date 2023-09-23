@@ -2,6 +2,8 @@
 
 [![GitHub issues by-label](https://img.shields.io/github/issues/IceWhaleTech/CasaOS-AppStore/help%20wanted?label=help%20wanted&style=for-the-badge)](https://github.com/IceWhaleTech/CasaOS-AppStore/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![GitHub contributors](https://img.shields.io/github/contributors/IceWhaleTech/CasaOS-AppStore?style=for-the-badge)](https://github.com/IceWhaleTech/CasaOS-AppStore/graphs/contributors)
 
+[![Number of installs](https://visitly.paodayag.dev/edge.zip/badge?label=Installs)](https://visitly.paodayag.dev)
+
 CasaOS AppStore needs your help to grow:
 
 - See [CONTRIBUTING.md](https://github.com/IceWhaleTech/CasaOS-AppStore/blob/main/CONTRIBUTING.md) for how to contribute CasaOS Apps in Docker Compose format.
@@ -11,7 +13,10 @@ Thank you!
 
 ---
 
-[![Number of installs](https://visitly.paodayag.dev/edge.zip/badge?label=Installs)](https://visitly.paodayag.dev) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RYAFEWHVZCZ62) 👈 ☕ Treat me a cup of coffee...
+### Support me by treating me to a cup of coffee 🥰
+
+[![Buy me a coffee](https://raw.githubusercontent.com/WisdomSky/CasaOS-Coolstore/main/buy-me-a-coffee.png)](https://www.buymeacoffee.com/wisdomsky)
+
 
 ---
 ## 💡 Information
