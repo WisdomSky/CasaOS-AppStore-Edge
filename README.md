@@ -2,7 +2,7 @@
 
 [![GitHub issues by-label](https://img.shields.io/github/issues/IceWhaleTech/CasaOS-AppStore/help%20wanted?label=help%20wanted&style=for-the-badge)](https://github.com/IceWhaleTech/CasaOS-AppStore/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![GitHub contributors](https://img.shields.io/github/contributors/IceWhaleTech/CasaOS-AppStore?style=for-the-badge)](https://github.com/IceWhaleTech/CasaOS-AppStore/graphs/contributors)
 
-[![Number of Unique Installs](https://visitly.paodayag.dev/edge.zip/badge?unique=1&label=Unique%20Installs)](https://visitly.paodayag.dev) [![Number of Installs](https://visitly.paodayag.dev/edge.zip/badge?label=Total%20Installs)](https://visitly.paodayag.dev)
+[![Number of Unique Installs](https://visitly.paodayag.dev/edge.zip/badge?unique=1&label=Unique%20Installs)](https://visitly.paodayag.dev) [![Number of Installs](https://visitly.paodayag.dev/edge.zip/badge?label=Total%20Downloads)](https://visitly.paodayag.dev)
 
 CasaOS AppStore needs your help to grow:
 
