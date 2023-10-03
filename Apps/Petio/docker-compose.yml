@@ -46,7 +46,7 @@ services:
         target: /app/logs
     container_name: petio-petio
   mongo:
-    image: mongo:7.0.1
+    image: mongo:7.0.2
     restart: unless-stopped
     hostname: mongo
     networks:
