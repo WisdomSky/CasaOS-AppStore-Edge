@@ -3,7 +3,7 @@ services:
   vocechat:
     environment:
       TZ: $TZ
-    image: privoce/vocechat-server:v0.3.38
+    image: privoce/vocechat-server:v0.3.39
     deploy:
       resources:
         reservations:
