@@ -6,7 +6,7 @@ services:
       MEM_STARTUP: "1024"
       PGID: "1000"
       PUID: "1000"
-    image: linuxserver/unifi-controller:7.5.176
+    image: linuxserver/unifi-controller:7.5.187
     deploy:
       resources:
         reservations:
