@@ -1,7 +1,7 @@
 name: holoplay
 services:
   holoplay:
-    image: spout8301/holoplay:1.9.12
+    image: spout8301/holoplay:1.10.1
     ports:
       - target: 3000
         published: "3000"
