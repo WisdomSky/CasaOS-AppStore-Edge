@@ -12,7 +12,7 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: linuxserver/jellyfin:10.8.11
+    image: linuxserver/jellyfin:10.8.12
     deploy:
       resources:
         reservations:
