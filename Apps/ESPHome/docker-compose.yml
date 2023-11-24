@@ -7,7 +7,7 @@ services:
         limits:
           cpus: "1"
           memory: 512M
-    image: ghcr.io/esphome/esphome@sha256:1a25ee385c2decc0228c8c51a36390a43795cbc79a36a3d1de48786ed2a55b15
+    image: ghcr.io/esphome/esphome@sha256:036148b6baaa5507f80535f8e935ce8dcaae48c4f698990115abba84b0e12e01
     labels:
       icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/ESPHome/icon.png
     restart: always
