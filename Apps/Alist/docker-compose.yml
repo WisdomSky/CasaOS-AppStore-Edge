@@ -1,7 +1,7 @@
 name: alist
 services:
   alist:
-    image: xhofe/alist:v3.29.0
+    image: xhofe/alist:v3.29.1
     deploy:
       resources:
         reservations:
