@@ -53,7 +53,6 @@ services:
 x-casaos:
   architectures:
     - amd64
-    - arm
     - arm64
   main: calibre-web
   author: CasaOS Team
