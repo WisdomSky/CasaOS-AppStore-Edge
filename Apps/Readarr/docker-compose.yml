@@ -5,7 +5,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: Europe/London
-    image: linuxserver/readarr:1.0.1126
+    image: linuxserver/readarr:0.3.10-develop
     deploy:
       resources:
         reservations:
@@ -18,10 +18,10 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/readarr/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /path/to/books
+        source: /DATA/AppData/$AppID/books
         target: /books
       - type: bind
         source: /DATA/Downloads
