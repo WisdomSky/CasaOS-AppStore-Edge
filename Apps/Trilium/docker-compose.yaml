@@ -7,7 +7,7 @@ services:
       resources:
         reservations:
           memory: 256M
-    image: zadam/trilium:0.62.4
+    image: zadam/trilium:0.62.5
     labels:
       icon: https://icon.casaos.io/main/all/trilium.png
     ports:
