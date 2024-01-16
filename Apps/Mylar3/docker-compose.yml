@@ -5,7 +5,7 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: linuxserver/mylar3:0.7.7
+    image: linuxserver/mylar3:0.7.8
     deploy:
       resources:
         reservations:
