@@ -8,7 +8,7 @@ services:
           memory: 1024M
     environment:
       - NO_CORS=1
-    image: stremio/server:v4.20.5
+    image: stremio/server:4.20.2
     ports:
       - target: 11470
         published: "11470"
