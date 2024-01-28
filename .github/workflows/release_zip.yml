@@ -1,9 +1,9 @@
-name: release
+name: release zip to appstore page 
 
 on:
   push:
-    tags:
-      - v*.*.*
+    branches:
+        - main
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
         run: find . -name "icon.png" | xargs rm -f
       - name: remove all app file
         run: find . -name "appfile.json" | xargs rm -f
-        
+
       - name: create a build with sysroot
         id: build
         run: |
@@ -30,20 +30,30 @@ jobs:
           cp -v recommend-list.json /tmp/build/sysroot/var/lib/casaos/appstore/default.new/
           cp -v README.md /tmp/build/sysroot/var/lib/casaos/appstore/default.new/
           pushd /tmp
-          tar zcvf linux-all-appstore-${{ github.ref_name }}.tar.gz build
-      
-      - uses: softprops/action-gh-release@v1
-        if: steps.build.outcome == 'success'
+          zip -r main.zip build
+            
+      - name: Checkout pages
+        uses: actions/checkout@v4
         with:
-          files: /tmp/linux-all-appstore-${{ github.ref_name }}.tar.gz
-          draft: true
-          prerelease: true
-          fail_on_unmatched_files: true
-
-      - name: Get version
-        id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+          ref: gh-pages
+          path: pages
+  
+      - name: Copy build to pages
+        run: |
+          cp /tmp/main.zip pages/store/main.zip
       
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB2 }}
+        with:
+          source-directory: 'pages'
+          destination-github-username: 'IceWhaleTech'
+          destination-repository-name: 'CasaOS-AppStore'
+          target-branch: 'gh-pages'
+          user-email: wiki@casaos.io
+          target-directory: ''
+
       - name: Upload to oss
         id: upload_to_oss
         uses: tvrcgo/upload-to-oss@master
@@ -53,6 +63,4 @@ jobs:
           region: oss-cn-shanghai
           bucket: casaos
           assets: |
-            /tmp/checksums.txt:/IceWhaleTech/CasaOS-AppStore/releases/download/${{ steps.get_version.outputs.VERSION }}/checksums.txt
-            /tmp/linux-all-appstore-${{ github.ref_name }}.tar.gz:/IceWhaleTech/CasaOS-AppStore/releases/download/${{ steps.get_version.outputs.VERSION }}/linux-all-appstore-${{ github.ref_name }}.tar.gz
-      
+            /tmp/main.zip:/store/main.zip
