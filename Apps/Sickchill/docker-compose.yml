@@ -5,7 +5,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: Europe/London
-    image: linuxserver/sickchill:2024.2.18
+    image: linuxserver/sickchill:2024.2.20
     deploy:
       resources:
         reservations:
