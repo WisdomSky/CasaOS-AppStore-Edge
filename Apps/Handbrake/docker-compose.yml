@@ -1,7 +1,7 @@
 name: handbrake
 services:
   handbrake:
-    image: jlesage/handbrake:v24.01.2
+    image: jlesage/handbrake:v24.03.1
     network_mode: bridge
     ports:
       - target: 5800
