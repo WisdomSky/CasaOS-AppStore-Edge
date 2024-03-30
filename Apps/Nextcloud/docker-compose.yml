@@ -1,7 +1,7 @@
 name: nextcloud
 services:
   nextcloud:
-    image: nextcloud:28.0.3
+    image: nextcloud:28.0.4
     deploy:
       resources:
         reservations:
