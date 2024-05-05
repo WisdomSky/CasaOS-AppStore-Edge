@@ -6,7 +6,7 @@ services:
       resources:
         reservations:
           memory: 512M
-    image: ghcr.io/esphome/esphome@sha256:4071afac339cc2e35a9e9d533934463418d970fb4566699512c544ae87fa38d5
+    image: ghcr.io/esphome/esphome@undefined
     labels:
       icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/ESPHome/icon.png
     restart: always
