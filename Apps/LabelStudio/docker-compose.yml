@@ -5,7 +5,7 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: heartexlabs/label-studio:1.12.0
+    image: heartexlabs/label-studio:1.12.1
     deploy:
       resources:
         reservations:
