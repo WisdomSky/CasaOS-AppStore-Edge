@@ -7,7 +7,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: Europe/London
-    image: linuxserver/nzbget:24.1.20240607
+    image: linuxserver/nzbget:24.1.20240614
     deploy:
       resources:
         reservations:
