@@ -1,7 +1,7 @@
 name: node-red
 services:
   node-red:
-    image: nodered/node-red:4.0.1
+    image: nodered/node-red:4.0.2
     deploy:
       resources:
         reservations:
