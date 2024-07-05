@@ -3,6 +3,7 @@ services:
   n8n:
     environment:
       TZ: $TZ
+      N8N_SECURE_COOKIE: "false"
     image: n8nio/n8n:1.49.0
     deploy:
       resources:
@@ -16,7 +17,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/.n8n
+        source: /DATA/AppData/$AppID
         target: /home/node/.n8n
     x-casaos:
       envs:
@@ -39,7 +40,6 @@ x-casaos:
   architectures:
     - amd64
     - arm64
-    - arm
   main: n8n
   author: YoussofKhawaja
   category: Utilities
