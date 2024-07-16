@@ -56,7 +56,7 @@ services:
             zh_cn: WebUI HTTP 端口
   unifi-db:
     container_name: unifi-db
-    image: docker.io/mongo:8.0.0-rc11-windowsservercore-ltsc2022
+    image: docker.io/mongo:8.0.0-rc13-windowsservercore-ltsc2022
     configs:
       - source: init-mongo.js
         target: /docker-entrypoint-initdb.d/init-mongo.js
