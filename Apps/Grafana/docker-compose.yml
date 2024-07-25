@@ -1,7 +1,7 @@
 name: grafana
 services:
   grafana:
-    image: grafana/grafana:11.1.0
+    image: grafana/grafana:11.1.1
     deploy:
       resources:
         reservations:
