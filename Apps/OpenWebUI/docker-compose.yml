@@ -1,7 +1,7 @@
 name: open-webui-ollama
 services:
   open-webui-ollama:
-    image: ghcr.io/open-webui/open-webui@sha256:1827785a6583340986e571dbaa076a49d1443a8ac57c7183e805e35c51da38b4
+    image: ghcr.io/open-webui/open-webui@undefined
     runtime: nvidia
     ipc: host
     environment:
