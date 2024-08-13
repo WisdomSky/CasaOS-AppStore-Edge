@@ -46,7 +46,7 @@ services:
         target: /app/logs
     container_name: petio-petio
   mongo:
-    image: mongo:8.0.0-rc16-windowsservercore-ltsc2022
+    image: mongo:8.0.0-rc17-windowsservercore-ltsc2022
     restart: unless-stopped
     hostname: mongo
     networks:

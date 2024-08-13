@@ -1,7 +1,7 @@
 name: mongodb
 services:
   mongo:
-    image: mongo:8.0.0-rc16-windowsservercore-ltsc2022
+    image: mongo:8.0.0-rc17-windowsservercore-ltsc2022
     restart: unless-stopped
     environment:
       PUID: $PUID
