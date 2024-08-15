@@ -1,7 +1,7 @@
 name: portainer
 services:
   portainer:
-    image: portainer/portainer-ce:2.20.3
+    image: portainer/portainer-ce:2.21.0-rc1-windowsltsc2022-amd64
     deploy:
       resources:
         reservations:
