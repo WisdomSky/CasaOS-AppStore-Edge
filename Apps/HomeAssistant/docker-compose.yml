@@ -5,7 +5,7 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: homeassistant/home-assistant:2024.8.2
+    image: homeassistant/home-assistant:2024.5
     deploy:
       resources:
         reservations:
