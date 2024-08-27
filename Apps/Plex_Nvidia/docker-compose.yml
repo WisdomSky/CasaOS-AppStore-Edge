@@ -1,4 +1,4 @@
-name: plex
+name: plex-nvidia
 services:
   plex:
     devices:
@@ -8,11 +8,16 @@ services:
       PGID: $PGID
       PUID: $PUID
       VERSION: docker
+      CPU_FALLBACK: "true"
+      NVIDIA_VISIBLE_DEVICES: all
     image: lscr.io/linuxserver/plex:1.40.5
     deploy:
       resources:
         reservations:
           memory: 256M
+          devices:
+            - capabilities:
+                - gpu
     network_mode: host
     restart: unless-stopped
     volumes:
@@ -103,6 +108,6 @@ x-casaos:
         4. 点击“添加库”。
         5. 选择您的媒体类型，并指定路径，例如 /Media，Plex 将存储和编目您的媒体文件，并将其包含在您的库中。
   title:
-    en_us: Plex
+    en_us: Plex(Nvidia GPU)
   index: /web/index.html
   port_map: "32400"
