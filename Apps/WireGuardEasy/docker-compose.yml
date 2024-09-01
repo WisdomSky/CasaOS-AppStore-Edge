@@ -1,7 +1,7 @@
 name: wg-easy
 services:
   wg-easy:
-    image: ghcr.io/wg-easy/wg-easy@sha256:f6c2587da3fdc9d5927743fb4a92cff42d690b182396ffd0cdad034becb41053
+    image: ghcr.io/wg-easy/wg-easy@undefined
     restart: unless-stopped
     network_mode: bridge
     environment:
