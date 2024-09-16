@@ -5,7 +5,7 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: linuxserver/readarr:0.3.10-develop
+    image: linuxserver/readarr:1.0.1126
     deploy:
       resources:
         reservations:
