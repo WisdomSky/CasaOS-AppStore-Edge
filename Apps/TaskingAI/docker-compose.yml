@@ -150,7 +150,7 @@ services:
     networks:
       - taskingai_network
   nginx:
-    image: nginx:1.27.1-perl
+    image: nginx:1.24
     ports:
       - "3080:80"
     volumes:
