@@ -5,7 +5,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: Europe/London
-    image: linuxserver/prowlarr:1.23.1
+    image: linuxserver/prowlarr:1.24.3
     deploy:
       resources:
         reservations:
