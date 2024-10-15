@@ -7,7 +7,7 @@ services:
           memory: 1024M
     container_name: immich-server
     hostname: immich-server
-    image: altran1502/immich-server:v1.117.0
+    image: altran1502/immich-server:v1.118.0
     volumes:
       - /DATA/Gallery/immich:/usr/src/app/upload
       - /etc/localtime:/etc/localtime:ro
@@ -28,7 +28,7 @@ services:
   immich-machine-learning:
     container_name: immich-machine-learning
     hostname: immich-machine-learning
-    image: altran1502/immich-machine-learning:v1.115.0
+    image: altran1502/immich-machine-learning:v1.118.0
     environment:
       - DB_DATABASE_NAME=immich
       - DB_PASSWORD=postgres
