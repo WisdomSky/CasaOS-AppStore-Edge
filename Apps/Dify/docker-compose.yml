@@ -152,7 +152,7 @@ services:
     networks:
       - dify
   weaviate:
-    image: semitechnologies/weaviate:1.27.0-alpha-faf123a
+    image: semitechnologies/weaviate:1.25.21
     container_name: dify-weaviate
     restart: unless-stopped
     volumes:
