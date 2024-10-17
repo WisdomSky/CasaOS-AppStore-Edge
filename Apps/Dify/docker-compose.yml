@@ -152,7 +152,7 @@ services:
     networks:
       - dify
   weaviate:
-    image: semitechnologies/weaviate:1.25.21
+    image: semitechnologies/weaviate:1.27.0
     container_name: dify-weaviate
     restart: unless-stopped
     volumes:
@@ -171,7 +171,7 @@ services:
     networks:
       - dify
   sandbox:
-    image: langgenius/dify-sandbox:0.2.9
+    image: langgenius/dify-sandbox:0.2.10
     container_name: dify-sandbox
     restart: unless-stopped
     environment:
