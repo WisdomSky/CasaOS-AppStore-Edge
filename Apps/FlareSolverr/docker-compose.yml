@@ -16,7 +16,7 @@ services:
       resources:
         reservations:
           memory: 64M
-    image: ghcr.io/flaresolverr/flaresolverr@sha256:f104ee51e5124d83cf3be9b37480649355d223f7d8f9e453d0d5ef06c6e3b31b
+    image: ghcr.io/flaresolverr/flaresolverr@undefined
     labels:
       icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/FlareSolverr/icon.png
     ports:
