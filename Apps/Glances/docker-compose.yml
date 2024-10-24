@@ -2,7 +2,7 @@ name: glances
 services:
   glances:
     container_name: glances
-    image: nicolargo/glances:4.1.2.1-full
+    image: nicolargo/glances:4.2.0
     pid: host
     deploy:
       resources:
