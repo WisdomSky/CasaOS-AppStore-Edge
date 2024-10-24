@@ -171,7 +171,7 @@ services:
     networks:
       - dify
   sandbox:
-    image: langgenius/dify-sandbox:0.2.10
+    image: langgenius/dify-sandbox:0.2.1
     container_name: dify-sandbox
     restart: unless-stopped
     environment:
