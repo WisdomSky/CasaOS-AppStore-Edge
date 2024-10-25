@@ -10,7 +10,7 @@ services:
       LOG_EVENTS: true
     command: []
     container_name: albyhub
-    image: ghcr.io/getalby/hub@sha256:cd388d2b8b9f895ce5daccd6fda2e80cd56bef8ee38bb5817924aab66e245ae3
+    image: ghcr.io/getalby/hub@sha256:bbf30c9fb676e2f7f01718ec1ba688a42bbf28dd8a6fed104ef780ae35767f94
     labels:
       icon: https://cdn.jsdelivr.net/gh/getAlby/umbrel-community-app-store@master/alby-albyhub/images/icon.svg
     ports:
@@ -37,6 +37,8 @@ x-casaos:
     - https://cdn.jsdelivr.net/gh/getAlby/umbrel-community-app-store@master/alby-albyhub/images/node.png
     - https://cdn.jsdelivr.net/gh/getAlby/umbrel-community-app-store@master/alby-albyhub/images/store.png
     - https://cdn.jsdelivr.net/gh/getAlby/umbrel-community-app-store@master/alby-albyhub/images/wallet.png
+  tagline:
+    en_us: A simple Bitcoin Lightning node with wallet, subaccounts and NWC connections
   index: /
   port_map: "58000"
   scheme: http
