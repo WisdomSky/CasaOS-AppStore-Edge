@@ -1,7 +1,7 @@
 name: mongodb4
 services:
   mongodb4:
-    image: mongo:8.0.1
+    image: mongo:8.0.3
     restart: unless-stopped
     environment:
       PUID: $PUID
