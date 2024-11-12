@@ -17,7 +17,7 @@ services:
     networks:
       - dify
   api:
-    image: langgenius/dify-api:0.11.0
+    image: langgenius/dify-api:0.6.14
     container_name: dify-api
     restart: unless-stopped
     environment:
@@ -70,7 +70,7 @@ services:
       - ssrf_proxy_network
       - dify
   worker:
-    image: langgenius/dify-api:0.11.0
+    image: langgenius/dify-api:0.6.14
     container_name: dify-worker
     restart: unless-stopped
     environment:
@@ -102,7 +102,7 @@ services:
       - ssrf_proxy_network
       - dify
   web:
-    image: langgenius/dify-web:0.11.0
+    image: langgenius/dify-web:0.6.14
     container_name: dify-web
     restart: unless-stopped
     environment:
@@ -152,7 +152,7 @@ services:
     networks:
       - dify
   weaviate:
-    image: semitechnologies/weaviate:1.27.2
+    image: semitechnologies/weaviate:1.27.2-e1433e3
     container_name: dify-weaviate
     restart: unless-stopped
     volumes:

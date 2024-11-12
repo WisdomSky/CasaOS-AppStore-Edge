@@ -7,7 +7,7 @@ services:
           memory: 1024M
     container_name: immich-server
     hostname: immich-server
-    image: altran1502/immich-server:v1.120.1
+    image: altran1502/immich-server:v1.120.0
     volumes:
       - /DATA/Gallery/immich:/usr/src/app/upload
       - /etc/localtime:/etc/localtime:ro
@@ -28,7 +28,7 @@ services:
   immich-machine-learning:
     container_name: immich-machine-learning
     hostname: immich-machine-learning
-    image: altran1502/immich-machine-learning:v1.120.1
+    image: altran1502/immich-machine-learning:v1.120.0
     environment:
       DB_DATABASE_NAME: immich
       DB_PASSWORD: postgres
@@ -43,7 +43,7 @@ services:
   redis:
     container_name: immich-redis
     hostname: immich-redis
-    image: redis:6.2-alpine
+    image: docker.io/redis:6.2-alpine@sha256
     healthcheck:
       test: redis-cli ping || exit 1
     volumes:
@@ -54,7 +54,7 @@ services:
   database:
     container_name: immich-postgres
     hostname: immich-postgres
-    image: tensorchord/pgvecto-rs:pg14-v0.2.0
+    image: docker.io/tensorchord/pgvecto-rs:pg14-v0.2.0@sha256
     environment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
@@ -127,15 +127,27 @@ x-casaos:
   tips:
     before_install:
       en_us: |
-        ⚠️ The project is under very active development.
-        ⚠️ Expect bugs and breaking changes.
-        ⚠️ Do not use the app as the only way to store your photos and videos.
-        ⚠️ Always follow 3-2-1 backup plan for your precious photos and videos!
+        *FAQ*
+
+        Default Account
+        | Username | Password |
+        | -------- | -------- |
+        | `admin`    | `password` |
+
+        Authorized Files and Data to PhotoPrism
+        1. Click setting via top right menu of App icon
+        2. map your device's media location in 'Host Path' and link it to PhotoPrism's 'Container Path' at /Media for seamless access.
       zh_cn: |
-        ⚠️ 本项目正在 非常活跃 地开发中。
-        ⚠️ 可能存在 bug 或者随时有重大变更。
-        ⚠️ 不要把本软件作为您存储照片或视频的唯一方式。
-        ⚠️ 为了您宝贵的照片与视频，请始终遵守 3-2-1 备份方案！
+        *FAQ*
+
+        默认账户
+        | 用户名 | 密码 |
+        | -------- | -------- |
+        | `admin`    | `password` |
+
+        授权文件和数据到 Immich
+        1. 点击 App 图标右上角的设置
+        2. 在 'Host Path' 中映射您的设备媒体位置，并将其链接到 Immich 的 '/Media' 路径，以实现无缝访问。
   port_map: "2283"
   scheme: http
   index: /
