@@ -1,7 +1,7 @@
 name: flowise
 services:
   flowise:
-    image: flowiseai/flowise:2.1.4
+    image: flowiseai/flowise:2.1.5
     restart: always
     environment:
       - PORT=3025
