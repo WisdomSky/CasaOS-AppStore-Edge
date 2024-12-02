@@ -2,7 +2,7 @@ name: autobrr
 services:
   autobrr:
     container_name: autobrr
-    image: ghcr.io/autobrr/autobrr@sha256:747c682d8d59e72a202ee4239bafbd7cfa10b0fc3a6220b61446de73dbd0c956
+    image: ghcr.io/autobrr/autobrr@sha256:329307d54fcfc8a79536a2619b5b78a834706dd97ea34c50180f52591fe5ce01
     network_mode: bridge
     restart: unless-stopped
     environment:
