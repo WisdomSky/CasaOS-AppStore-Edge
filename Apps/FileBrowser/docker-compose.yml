@@ -5,7 +5,7 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: filebrowser/filebrowser:v2.31.2
+    image: filebrowser/filebrowser:v2.23.0
     deploy:
       resources:
         reservations:
