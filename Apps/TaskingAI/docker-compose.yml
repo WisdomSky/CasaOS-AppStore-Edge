@@ -25,7 +25,7 @@ services:
     networks:
       - taskingai_network
   backend-plugin:
-    image: taskingai/taskingai-plugin:v0.2.10
+    image: taskingai/taskingai-plugin:v0.2.13
     environment:
       AES_ENCRYPTION_KEY: b90e4648ad699c3bdf62c0860e09eb9efc098ee75f215bf750847ae19d41e4b0
       ICON_URL_PREFIX: http://nginx:3080
@@ -150,7 +150,7 @@ services:
     networks:
       - taskingai_network
   nginx:
-    image: nginx:1.24
+    image: nginx:1.27.3
     ports:
       - "3080:80"
     volumes:
