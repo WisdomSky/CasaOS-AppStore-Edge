@@ -10,7 +10,7 @@ services:
       LOG_EVENTS: true
     command: []
     container_name: albyhub
-    image: ghcr.io/getalby/hub@sha256:0cd6fc0ae0ba3e4dd227f2dab8940451f5551f920a9ecf2fcda1d31884d532de
+    image: ghcr.io/getalby/hub@sha256:c69a3bbc4c7d2538f3a2ff8d26a38031f093a6629b31b63641b8c005c8d1d7a4
     deploy:
       resources:
         reservations:
