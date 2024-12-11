@@ -1,7 +1,7 @@
 name: vaultwarden
 services:
   vaultwarden:
-    image: vaultwarden/server:1.32.5
+    image: vaultwarden/server:1.32.6
     deploy:
       resources:
         reservations:
