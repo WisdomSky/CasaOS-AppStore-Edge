@@ -157,7 +157,7 @@ services:
     networks:
       - dify
   weaviate:
-    image: semitechnologies/weaviate:1.28.0
+    image: semitechnologies/weaviate:1.28.0-da31360
     container_name: dify-weaviate
     restart: unless-stopped
     volumes:
