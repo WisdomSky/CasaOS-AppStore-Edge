@@ -96,7 +96,7 @@ x-casaos:
   category: Gallery
   author: Cp0204
   developer: alextran1502
-  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore-Play@main/Apps/immich/icon.png
+  icon: https://cdn.jsdelivr.net/gh/Cp0204/CasaOS-AppStore-Play@main/Apps/immich/icon.png
   screenshot_link:
     - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Immich/screenshot-1.png
     - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Immich/screenshot-2.png
@@ -127,27 +127,27 @@ x-casaos:
   tips:
     before_install:
       en_us: |
-        ⚠️ The project is under very active development.
-        ⚠️ Expect bugs and breaking changes.
-        ⚠️ Do not use the app as the only way to store your photos and videos.
-        ⚠️ Always follow 3-2-1 backup plan for your precious photos and videos!
+        *FAQ*
 
-        ## Authorized Media Files and Data
-        1. Click on the settings icon in the upper right corner of the App.
-        2. In the immich-server tab, map your album storage location in the Volumes section (default is `/DATA/Gallery/immich`).
+        Default Account
+        | Username | Password |
+        | -------- | -------- |
+        | `admin`    | `password` |
 
-        For complete project documentation and installation instructions, please [refer to](https://immich.app).
+        Authorized Files and Data to PhotoPrism
+        1. Click setting via top right menu of App icon
+        2. map your device's media location in 'Host Path' and link it to PhotoPrism's 'Container Path' at /Media for seamless access.
       zh_cn: |
-        ⚠️ 本项目正在 非常活跃 地开发中。
-        ⚠️ 可能存在 bug 或者随时有重大变更。
-        ⚠️ 不要把本软件作为您存储照片或视频的唯一方式。
-        ⚠️ 为了您宝贵的照片与视频，请始终遵守 3-2-1 备份方案！
+        *FAQ*
 
-        ## 授权媒体文件和数据
+        默认账户
+        | 用户名 | 密码 |
+        | -------- | -------- |
+        | `admin`    | `password` |
+
+        授权文件和数据到 Immich
         1. 点击 App 图标右上角的设置
-        2. 在 immich-server 选项卡 Volumes 栏目中映射您的相册储存位置（默认为 `/DATA/Gallery/immich ` ）。
-
-        完整的项目文档以及安装教程请[参见](https://immich.app)。
+        2. 在 'Host Path' 中映射您的设备媒体位置，并将其链接到 Immich 的 '/Media' 路径，以实现无缝访问。
   port_map: "2283"
   scheme: http
   index: /
