@@ -7,7 +7,7 @@ services:
       resources:
         reservations:
           memory: 256M
-    image: dbeaver/cloudbeaver:24.3.0
+    image: dbeaver/cloudbeaver:24.3.1
     ports:
       - target: 8978
         published: "8978"
