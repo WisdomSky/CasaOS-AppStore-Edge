@@ -102,7 +102,7 @@ services:
       - ssrf_proxy_network
       - dify
   web:
-    image: langgenius/dify-web:0.12.1
+    image: langgenius/dify-web:0.14.2
     container_name: dify-web
     restart: unless-stopped
     environment:
@@ -157,7 +157,7 @@ services:
     networks:
       - dify
   weaviate:
-    image: semitechnologies/weaviate:1.27.9-a432e5c
+    image: semitechnologies/weaviate:1.28.2-c864844
     container_name: dify-weaviate
     restart: unless-stopped
     volumes:
