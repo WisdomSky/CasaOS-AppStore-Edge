@@ -13,7 +13,7 @@ services:
       resources:
         reservations:
           memory: 64M
-    image: rogerfar/rdtclient:2.0.93
+    image: rogerfar/rdtclient:2.0.94
     labels:
       icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/RDTClient/icon.png
     ports:
